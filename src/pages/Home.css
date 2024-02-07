@@ -78,7 +78,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: blue;
+  background-color: #6c757d;
+  color: white;
 }
 .randomP {
   display: flex;
@@ -87,7 +88,11 @@
   margin-top: 0.5%;
   width: 22%;
   height: 5%;
-  background-color: rebeccapurple;
+  background-color: rgb(221, 221, 221);
+  color: rgb(56, 56, 56);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 .player {
   display: flex;
@@ -96,8 +101,8 @@
   border-radius: 20px;
   width: 22%;
   height: 50%;
-  background-color: #ffd700;
-  color: rgb(77, 69, 69);
+  background-color: rgb(80, 80, 80);
+  color: rgb(212, 212, 212);
   font-size: 1.8rem;
 }
 .positionP {

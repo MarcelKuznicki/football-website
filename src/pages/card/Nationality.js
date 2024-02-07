@@ -195,8 +195,8 @@ export function Nationality() {
     "Zimbabwean",
   ];
 
-  let pos = Math.floor(Math.random(193) * (193 - 0) + 0);
-  let resultN = nationals[pos];
+  let posN = Math.floor(Math.random(193) * (193 - 0) + 0);
+  let resultN = nationals[posN];
 
   return <div>{resultN}</div>;
 }

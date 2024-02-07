@@ -19,32 +19,11 @@ function Leagues() {
         <Tab eventKey="Bundesliga" title="Bundesliga"></Tab>
         <Tab eventKey="Ligue 1" title="Ligue 1"></Tab>
       </Tabs>
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th className="col-1">Position</th>
-            <th>Football Club</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Lech</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Legia</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Pogon</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Piast</td>
-          </tr>
-        </tbody>
-      </Table>
+      <div>
+        <ul>
+          <li>liverpool</li>
+        </ul>
+      </div>
     </div>
   );
 }

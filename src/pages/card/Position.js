@@ -14,8 +14,8 @@ export function Position() {
     "LW",
   ];
 
-  let pos = Math.floor(Math.random(12) * (12 - 0) + 0);
-  let resultP = positions[pos];
+  let posP = Math.floor(Math.random(12) * (12 - 0) + 0);
+  let resultP = positions[posP];
 
   return <div>{resultP}</div>;
 }
