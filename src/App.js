@@ -1,28 +1,24 @@
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import "./App.css";
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import Home from './pages/home';
+import History from './pages/history';
+import CardGenerator from './pages/cardGenerator';
+import Leagues from './pages/Leagues';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar expand="lg" className="bg-body-tertiary">
-          <Container>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">History</Nav.Link>
-                <Nav.Link href="#link">Leagues</Nav.Link>
-                <Nav.Link href="#link">Card Generator</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/history' element={<History/>}/>
+          <Route path='/cardgenerator' element={<CardGenerator/>}/>
+          <Route path='/leagues' element={<Leagues/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
