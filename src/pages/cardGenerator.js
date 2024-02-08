@@ -40,16 +40,20 @@ function CardGenerator() {
           <div className="positionP">{positionResult}</div>
           <div className="nationalityP">{nationalityResult}</div>
           <div className="nameP">{names}</div>
-          <div className="stats1">PAC:{stat1}</div>
-          <div className="stats4">DRI:{stat2}</div>
-          <div className="stats2">SHO:{stat3}</div>
-          <div className="stats5">DEF:{stat4}</div>
-          <div className="stats3">PAS:{stat5}</div>
-          <div className="stats6">PHY:{stat6}</div>
+          <div className="stats1">{stat1} PAC</div>
+          <div className="stats4">{stat2} DRI</div>
+          <div className="stats2">{stat3} SHO</div>
+          <div className="stats5">{stat4} DEF</div>
+          <div className="stats3">{stat5} PAS</div>
+          <div className="stats6">{stat6} PHY</div>
+          <Button
+            variant="secondary"
+            className="randomP"
+            onClick={generateData}
+          >
+            Losuj
+          </Button>{" "}
         </div>
-        <Button variant="secondary" className="randomP" onClick={generateData}>
-          Losuj
-        </Button>{" "}
       </div>
     </div>
   );

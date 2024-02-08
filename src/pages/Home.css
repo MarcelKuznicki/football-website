@@ -85,9 +85,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5%;
-  width: 22%;
-  height: 5%;
+  margin: auto;
+  width: 80%;
+  height: 10%;
   background-color: rgb(221, 221, 221);
   color: rgb(56, 56, 56);
   font-family: Arial, Helvetica, sans-serif;
@@ -99,8 +99,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   border-radius: 20px;
-  width: 22%;
-  height: 50%;
+  width: 25%;
+  height: 70%;
   background-color: rgb(80, 80, 80);
   color: rgb(212, 212, 212);
   font-size: 1.8rem;
@@ -159,4 +159,46 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  .player {
+    width: 40%;
+  }
+  .image {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .player {
+    width: 50%;
+  }
+  .image {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .player {
+    width: 50%;
+  }
+  .image {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .player {
+    width: 70%;
+  }
+  .image {
+    width: 65%;
+  }
+}
+/*league css*/
+.containerL {
+  max-height: 100vh;
+}
+.leaguecCol {
+  font-size: 15px;
+}
+.leaguecCol > td {
+  background-color: rgb(228, 228, 228);
 }

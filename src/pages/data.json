@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "league": "Premier league",
+    "club": "Liverpool",
+    "points": 51
+  },
+  {
+    "id": 2,
+    "league": "Premier league",
+    "club": "Man city",
+    "points": 49
+  },
+  {
+    "id": 3,
+    "league": "Premier league",
+    "club": "Arsenal",
+    "points": 49
+  },
+  {
+    "id": 4,
+    "league": "Premier league",
+    "club": "Aston Villa",
+    "points": 46
+  },
+  {
+    "id": 5,
+    "league": "Premier league",
+    "club": "Tottenham",
+    "points": 44
+  },
+  {
+    "id": 6,
+    "league": "Premier league",
+    "club": "Man utd",
+    "points": 38
+  },
+  {
+    "id": 7,
+    "league": "Premier league",
+    "club": "West ham",
+    "points": 36
+  },
+  {
+    "id": 8,
+    "league": "Premier league",
+    "club": "Brighton",
+    "points": 35
+  },
+  {
+    "id": 9,
+    "league": "Premier league",
+    "club": "Newcastle",
+    "points": 33
+  },
+  {
+    "id": 10,
+    "league": "Premier league",
+    "club": "Wolverhampton",
+    "points": 32
+  },
+  {
+    "id": 11,
+    "league": "Premier league",
+    "club": "Chealsea",
+    "points": 31
+  },
+  {
+    "id": 12,
+    "league": "Premier league",
+    "club": "Bournemouth",
+    "points": 27
+  },
+  {
+    "id": 13,
+    "league": "Premier league",
+    "club": "Fulham",
+    "points": 26
+  },
+  {
+    "id": 14,
+    "league": "Premier league",
+    "club": "Crystal Palace",
+    "points": 24
+  },
+  {
+    "id": 15,
+    "league": "Premier league",
+    "club": "Brentford",
+    "points": 22
+  },
+  {
+    "id": 16,
+    "league": "Premier league",
+    "club": "Nottingham Forest",
+    "points": 21
+  },
+  {
+    "id": 17,
+    "league": "Premier league",
+    "club": "Luton Town",
+    "points": 20
+  },
+  {
+    "id": 18,
+    "league": "Premier league",
+    "club": "Everton",
+    "points": 19
+  },
+  {
+    "id": 19,
+    "league": "Premier league",
+    "club": "Burnley",
+    "points": 13
+  },
+  {
+    "id": 20,
+    "league": "Premier league",
+    "club": "Sheffield United",
+    "points": 10
+  }
+]

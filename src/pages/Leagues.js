@@ -1,29 +1,51 @@
 import Header from "../components/header";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
-import Table from "react-bootstrap/Table";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
+import data from "./data.json";
+import Nav from "react-bootstrap/Nav";
+import Table from "react-bootstrap/Table";
 
 function Leagues() {
+  const Clubs = data.map((item) => {
+    return (
+      <tr className="leaguecCol">
+        <td>{item.id}</td>
+        <td>{item.club}</td>
+        <td>{item.points}</td>
+      </tr>
+    );
+  });
+
   return (
-    <div>
-      <Header></Header>
-      <Tabs
-        defaultActiveKey="profile"
-        id="uncontrolled-tab-example"
-        className=""
-      >
-        <Tab eventKey="Premier League" title="Premier League"></Tab>
-        <Tab eventKey="La Liga" title="La Liga"></Tab>
-        <Tab eventKey="Serie A" title="Serie A"></Tab>
-        <Tab eventKey="Bundesliga" title="Bundesliga"></Tab>
-        <Tab eventKey="Ligue 1" title="Ligue 1"></Tab>
-      </Tabs>
-      <div>
-        <ul>
-          <li>liverpool</li>
-        </ul>
-      </div>
+    <div className="containerL">
+      <Header />
+      <Nav className="justify-content-center" activeKey="/home">
+        <Nav.Item>
+          <Nav.Link href="/home">Premier League</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-1">Ekstraklasa</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-2">La liga</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="disabled">Ligue 1</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="disabled">Serie A</Nav.Link>
+        </Nav.Item>
+      </Nav>
+      <Table striped bordered hover>
+        <thead className="Lhead">
+          <tr>
+            <th>Postition</th>
+            <th>Club</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody className="Lbody">{Clubs}</tbody>
+      </Table>
     </div>
   );
 }
